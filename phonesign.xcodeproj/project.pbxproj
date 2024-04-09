@@ -1,0 +1,867 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D775427E22BB9807B98F878 /* Pods_phonesignTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35118C623024666AF1240876 /* Pods_phonesignTests.framework */; };
+		9E2751107D168409718CD40F /* Pods_phonesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC16319F520698E3D99E508 /* Pods_phonesign.framework */; };
+		D57698097F0BB2854FAA9565 /* Pods_phonesign_phonesignUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212114CCB54327B16D01C5BD /* Pods_phonesign_phonesignUITests.framework */; };
+		DB26DE8A265B602A00143424 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB26DE89265B602A00143424 /* AppDelegate.m */; };
+		DB26DE8D265B602A00143424 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB26DE8C265B602A00143424 /* SceneDelegate.m */; };
+		DB26DE90265B602A00143424 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = DB26DE8F265B602A00143424 /* ViewController.mm */; };
+		DB26DE93265B602A00143424 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB26DE91265B602A00143424 /* Main.storyboard */; };
+		DB26DE95265B602C00143424 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB26DE94265B602C00143424 /* Assets.xcassets */; };
+		DB26DE98265B602C00143424 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB26DE96265B602C00143424 /* LaunchScreen.storyboard */; };
+		DB26DE9B265B602C00143424 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB26DE9A265B602C00143424 /* main.m */; };
+		DB26DEA5265B602C00143424 /* phonesignTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB26DEA4265B602C00143424 /* phonesignTests.m */; };
+		DB26DEB0265B602C00143424 /* phonesignUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB26DEAF265B602C00143424 /* phonesignUITests.m */; };
+		DB26DED8265B605B00143424 /* openssl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB26DEC3265B605B00143424 /* openssl.cpp */; };
+		DB26DEDA265B605B00143424 /* common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB26DEC6265B605B00143424 /* common.cpp */; };
+		DB26DEDB265B605B00143424 /* base64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB26DEC8265B605B00143424 /* base64.cpp */; };
+		DB26DEDC265B605B00143424 /* json.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB26DECC265B605B00143424 /* json.cpp */; };
+		DB26DEDF265B605C00143424 /* bundle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB26DED0265B605B00143424 /* bundle.cpp */; };
+		DB26DEE0265B605C00143424 /* macho.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB26DED2265B605B00143424 /* macho.cpp */; };
+		DB26DEE1265B605C00143424 /* zsign.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB26DED3265B605B00143424 /* zsign.cpp */; };
+		DB26DEE2265B605C00143424 /* signing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB26DED4265B605B00143424 /* signing.cpp */; };
+		DB26DEE3265B605C00143424 /* archo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB26DED5265B605B00143424 /* archo.cpp */; };
+		DB26DEE5265B7CE500143424 /* OpenSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB26DEE4265B7CE500143424 /* OpenSSL.framework */; };
+		DB26DEE8265B81AD00143424 /* phonesign.mm in Sources */ = {isa = PBXBuildFile; fileRef = DB26DEE6265B81AD00143424 /* phonesign.mm */; };
+		DB26DEEB265B84A100143424 /* OpenSSL.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB26DEE4265B7CE500143424 /* OpenSSL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DB26DEED265CCBBC00143424 /* 证书.p12 in Resources */ = {isa = PBXBuildFile; fileRef = DB26DEEC265CCBBC00143424 /* 证书.p12 */; };
+		DB26DEEF265CDA2C00143424 /* KuWoYinYuePure.ipa in Resources */ = {isa = PBXBuildFile; fileRef = DB26DEEE265CDA2C00143424 /* KuWoYinYuePure.ipa */; };
+		DB26DEF1265CDA4400143424 /* dev.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = DB26DEF0265CDA4400143424 /* dev.mobileprovision */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB26DEA1265B602C00143424 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB26DE7D265B602A00143424 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB26DE84265B602A00143424;
+			remoteInfo = phonesign;
+		};
+		DB26DEAC265B602C00143424 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB26DE7D265B602A00143424 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB26DE84265B602A00143424;
+			remoteInfo = phonesign;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DB26DEEA265B849A00143424 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DB26DEEB265B84A100143424 /* OpenSSL.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		212114CCB54327B16D01C5BD /* Pods_phonesign_phonesignUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_phonesign_phonesignUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BC16319F520698E3D99E508 /* Pods_phonesign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_phonesign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35118C623024666AF1240876 /* Pods_phonesignTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_phonesignTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40440E68B715623D4556FEF8 /* Pods-phonesignTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phonesignTests.debug.xcconfig"; path = "Target Support Files/Pods-phonesignTests/Pods-phonesignTests.debug.xcconfig"; sourceTree = "<group>"; };
+		66211741E6A3847A38F0FE7E /* Pods-phonesign.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phonesign.debug.xcconfig"; path = "Target Support Files/Pods-phonesign/Pods-phonesign.debug.xcconfig"; sourceTree = "<group>"; };
+		7DD02BE0CDAE03ECC1E5CBA8 /* Pods-phonesign.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phonesign.release.xcconfig"; path = "Target Support Files/Pods-phonesign/Pods-phonesign.release.xcconfig"; sourceTree = "<group>"; };
+		A60AE269CEC671C867400DD0 /* Pods-phonesign-phonesignUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phonesign-phonesignUITests.release.xcconfig"; path = "Target Support Files/Pods-phonesign-phonesignUITests/Pods-phonesign-phonesignUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DB26DE85265B602A00143424 /* phonesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = phonesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB26DE88265B602A00143424 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DB26DE89265B602A00143424 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DB26DE8B265B602A00143424 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		DB26DE8C265B602A00143424 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		DB26DE8E265B602A00143424 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DB26DE8F265B602A00143424 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		DB26DE92265B602A00143424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB26DE94265B602C00143424 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB26DE97265B602C00143424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB26DE99265B602C00143424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB26DE9A265B602C00143424 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DB26DEA0265B602C00143424 /* phonesignTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = phonesignTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB26DEA4265B602C00143424 /* phonesignTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = phonesignTests.m; sourceTree = "<group>"; };
+		DB26DEA6265B602C00143424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB26DEAB265B602C00143424 /* phonesignUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = phonesignUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB26DEAF265B602C00143424 /* phonesignUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = phonesignUITests.m; sourceTree = "<group>"; };
+		DB26DEB1265B602C00143424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB26DEBE265B605B00143424 /* archo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = archo.h; sourceTree = "<group>"; };
+		DB26DEC1265B605B00143424 /* openssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openssl.h; sourceTree = "<group>"; };
+		DB26DEC2265B605B00143424 /* bundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bundle.h; sourceTree = "<group>"; };
+		DB26DEC3265B605B00143424 /* openssl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = openssl.cpp; sourceTree = "<group>"; };
+		DB26DEC6265B605B00143424 /* common.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = common.cpp; sourceTree = "<group>"; };
+		DB26DEC7265B605B00143424 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		DB26DEC8265B605B00143424 /* base64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = base64.cpp; sourceTree = "<group>"; };
+		DB26DEC9265B605B00143424 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		DB26DECA265B605B00143424 /* json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = json.h; sourceTree = "<group>"; };
+		DB26DECB265B605B00143424 /* mach-o.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "mach-o.h"; sourceTree = "<group>"; };
+		DB26DECC265B605B00143424 /* json.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = json.cpp; sourceTree = "<group>"; };
+		DB26DECF265B605B00143424 /* macho.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macho.h; sourceTree = "<group>"; };
+		DB26DED0265B605B00143424 /* bundle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bundle.cpp; sourceTree = "<group>"; };
+		DB26DED1265B605B00143424 /* signing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = signing.h; sourceTree = "<group>"; };
+		DB26DED2265B605B00143424 /* macho.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = macho.cpp; sourceTree = "<group>"; };
+		DB26DED3265B605B00143424 /* zsign.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zsign.cpp; sourceTree = "<group>"; };
+		DB26DED4265B605B00143424 /* signing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = signing.cpp; sourceTree = "<group>"; };
+		DB26DED5265B605B00143424 /* archo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = archo.cpp; sourceTree = "<group>"; };
+		DB26DEE4265B7CE500143424 /* OpenSSL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenSSL.framework; sourceTree = "<group>"; };
+		DB26DEE6265B81AD00143424 /* phonesign.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = phonesign.mm; sourceTree = "<group>"; };
+		DB26DEE9265B839E00143424 /* phonesign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = phonesign.h; sourceTree = "<group>"; };
+		DB26DEEC265CCBBC00143424 /* 证书.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "证书.p12"; sourceTree = "<group>"; };
+		DB26DEEE265CDA2C00143424 /* KuWoYinYuePure.ipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = KuWoYinYuePure.ipa; sourceTree = "<group>"; };
+		DB26DEF0265CDA4400143424 /* dev.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = dev.mobileprovision; sourceTree = "<group>"; };
+		F499EC74784AB3C4D390FD76 /* Pods-phonesignTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phonesignTests.release.xcconfig"; path = "Target Support Files/Pods-phonesignTests/Pods-phonesignTests.release.xcconfig"; sourceTree = "<group>"; };
+		F50DD8ABE1F2FA8E705C40DD /* Pods-phonesign-phonesignUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phonesign-phonesignUITests.debug.xcconfig"; path = "Target Support Files/Pods-phonesign-phonesignUITests/Pods-phonesign-phonesignUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB26DE82265B602A00143424 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB26DEE5265B7CE500143424 /* OpenSSL.framework in Frameworks */,
+				9E2751107D168409718CD40F /* Pods_phonesign.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB26DE9D265B602C00143424 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D775427E22BB9807B98F878 /* Pods_phonesignTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB26DEA8265B602C00143424 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D57698097F0BB2854FAA9565 /* Pods_phonesign_phonesignUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		67EAD5D1D8D22B18AE75DC24 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66211741E6A3847A38F0FE7E /* Pods-phonesign.debug.xcconfig */,
+				7DD02BE0CDAE03ECC1E5CBA8 /* Pods-phonesign.release.xcconfig */,
+				F50DD8ABE1F2FA8E705C40DD /* Pods-phonesign-phonesignUITests.debug.xcconfig */,
+				A60AE269CEC671C867400DD0 /* Pods-phonesign-phonesignUITests.release.xcconfig */,
+				40440E68B715623D4556FEF8 /* Pods-phonesignTests.debug.xcconfig */,
+				F499EC74784AB3C4D390FD76 /* Pods-phonesignTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DB26DE7C265B602A00143424 = {
+			isa = PBXGroup;
+			children = (
+				DB26DEF0265CDA4400143424 /* dev.mobileprovision */,
+				DB26DEEC265CCBBC00143424 /* 证书.p12 */,
+				DB26DEEE265CDA2C00143424 /* KuWoYinYuePure.ipa */,
+				DB26DEE4265B7CE500143424 /* OpenSSL.framework */,
+				DB26DEBD265B605B00143424 /* zsign-master */,
+				DB26DE87265B602A00143424 /* phonesign */,
+				DB26DEA3265B602C00143424 /* phonesignTests */,
+				DB26DEAE265B602C00143424 /* phonesignUITests */,
+				DB26DE86265B602A00143424 /* Products */,
+				DB26DF63265CF6BB00143424 /* Frameworks */,
+				67EAD5D1D8D22B18AE75DC24 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		DB26DE86265B602A00143424 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB26DE85265B602A00143424 /* phonesign.app */,
+				DB26DEA0265B602C00143424 /* phonesignTests.xctest */,
+				DB26DEAB265B602C00143424 /* phonesignUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB26DE87265B602A00143424 /* phonesign */ = {
+			isa = PBXGroup;
+			children = (
+				DB26DE88265B602A00143424 /* AppDelegate.h */,
+				DB26DE89265B602A00143424 /* AppDelegate.m */,
+				DB26DE8B265B602A00143424 /* SceneDelegate.h */,
+				DB26DE8C265B602A00143424 /* SceneDelegate.m */,
+				DB26DE8E265B602A00143424 /* ViewController.h */,
+				DB26DE8F265B602A00143424 /* ViewController.mm */,
+				DB26DE91265B602A00143424 /* Main.storyboard */,
+				DB26DE94265B602C00143424 /* Assets.xcassets */,
+				DB26DE96265B602C00143424 /* LaunchScreen.storyboard */,
+				DB26DE99265B602C00143424 /* Info.plist */,
+				DB26DE9A265B602C00143424 /* main.m */,
+			);
+			path = phonesign;
+			sourceTree = "<group>";
+		};
+		DB26DEA3265B602C00143424 /* phonesignTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB26DEA4265B602C00143424 /* phonesignTests.m */,
+				DB26DEA6265B602C00143424 /* Info.plist */,
+			);
+			path = phonesignTests;
+			sourceTree = "<group>";
+		};
+		DB26DEAE265B602C00143424 /* phonesignUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DB26DEAF265B602C00143424 /* phonesignUITests.m */,
+				DB26DEB1265B602C00143424 /* Info.plist */,
+			);
+			path = phonesignUITests;
+			sourceTree = "<group>";
+		};
+		DB26DEBD265B605B00143424 /* zsign-master */ = {
+			isa = PBXGroup;
+			children = (
+				DB26DEC5265B605B00143424 /* common */,
+				DB26DED3265B605B00143424 /* zsign.cpp */,
+				DB26DEC1265B605B00143424 /* openssl.h */,
+				DB26DEC3265B605B00143424 /* openssl.cpp */,
+				DB26DEC2265B605B00143424 /* bundle.h */,
+				DB26DED0265B605B00143424 /* bundle.cpp */,
+				DB26DECF265B605B00143424 /* macho.h */,
+				DB26DED2265B605B00143424 /* macho.cpp */,
+				DB26DED1265B605B00143424 /* signing.h */,
+				DB26DED4265B605B00143424 /* signing.cpp */,
+				DB26DEBE265B605B00143424 /* archo.h */,
+				DB26DED5265B605B00143424 /* archo.cpp */,
+				DB26DEE9265B839E00143424 /* phonesign.h */,
+				DB26DEE6265B81AD00143424 /* phonesign.mm */,
+			);
+			path = "zsign-master";
+			sourceTree = "<group>";
+		};
+		DB26DEC5265B605B00143424 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				DB26DEC6265B605B00143424 /* common.cpp */,
+				DB26DEC7265B605B00143424 /* base64.h */,
+				DB26DEC8265B605B00143424 /* base64.cpp */,
+				DB26DEC9265B605B00143424 /* common.h */,
+				DB26DECA265B605B00143424 /* json.h */,
+				DB26DECB265B605B00143424 /* mach-o.h */,
+				DB26DECC265B605B00143424 /* json.cpp */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		DB26DF63265CF6BB00143424 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BC16319F520698E3D99E508 /* Pods_phonesign.framework */,
+				212114CCB54327B16D01C5BD /* Pods_phonesign_phonesignUITests.framework */,
+				35118C623024666AF1240876 /* Pods_phonesignTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB26DE84265B602A00143424 /* phonesign */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB26DEB4265B602C00143424 /* Build configuration list for PBXNativeTarget "phonesign" */;
+			buildPhases = (
+				D85AB2F03B8B86BAC96A102C /* Build Cocoa Frameworks */,
+				634B71589828F09CC753CAB3 /* [CP] Check Pods Manifest.lock */,
+				DB26DE81265B602A00143424 /* Sources */,
+				DB26DE82265B602A00143424 /* Frameworks */,
+				DB26DE83265B602A00143424 /* Resources */,
+				DB26DEEA265B849A00143424 /* CopyFiles */,
+				95106DA93B68F0CBA0227880 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = phonesign;
+			productName = phonesign;
+			productReference = DB26DE85265B602A00143424 /* phonesign.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB26DE9F265B602C00143424 /* phonesignTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB26DEB7265B602C00143424 /* Build configuration list for PBXNativeTarget "phonesignTests" */;
+			buildPhases = (
+				CA144AF23C605F160332781B /* [CP] Check Pods Manifest.lock */,
+				DB26DE9C265B602C00143424 /* Sources */,
+				DB26DE9D265B602C00143424 /* Frameworks */,
+				DB26DE9E265B602C00143424 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB26DEA2265B602C00143424 /* PBXTargetDependency */,
+			);
+			name = phonesignTests;
+			productName = phonesignTests;
+			productReference = DB26DEA0265B602C00143424 /* phonesignTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB26DEAA265B602C00143424 /* phonesignUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB26DEBA265B602C00143424 /* Build configuration list for PBXNativeTarget "phonesignUITests" */;
+			buildPhases = (
+				C4985C940A2A68FDA09D0500 /* [CP] Check Pods Manifest.lock */,
+				DB26DEA7265B602C00143424 /* Sources */,
+				DB26DEA8265B602C00143424 /* Frameworks */,
+				DB26DEA9265B602C00143424 /* Resources */,
+				0BC2482CF22F5CACAD788481 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB26DEAD265B602C00143424 /* PBXTargetDependency */,
+			);
+			name = phonesignUITests;
+			productName = phonesignUITests;
+			productReference = DB26DEAB265B602C00143424 /* phonesignUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB26DE7D265B602A00143424 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					DB26DE84265B602A00143424 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					DB26DE9F265B602C00143424 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = DB26DE84265B602A00143424;
+					};
+					DB26DEAA265B602C00143424 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = DB26DE84265B602A00143424;
+					};
+				};
+			};
+			buildConfigurationList = DB26DE80265B602A00143424 /* Build configuration list for PBXProject "phonesign" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB26DE7C265B602A00143424;
+			productRefGroup = DB26DE86265B602A00143424 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB26DE84265B602A00143424 /* phonesign */,
+				DB26DE9F265B602C00143424 /* phonesignTests */,
+				DB26DEAA265B602C00143424 /* phonesignUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB26DE83265B602A00143424 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB26DE98265B602C00143424 /* LaunchScreen.storyboard in Resources */,
+				DB26DE95265B602C00143424 /* Assets.xcassets in Resources */,
+				DB26DEF1265CDA4400143424 /* dev.mobileprovision in Resources */,
+				DB26DEED265CCBBC00143424 /* 证书.p12 in Resources */,
+				DB26DE93265B602A00143424 /* Main.storyboard in Resources */,
+				DB26DEEF265CDA2C00143424 /* KuWoYinYuePure.ipa in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB26DE9E265B602C00143424 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB26DEA9265B602C00143424 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+	
+		0BC2482CF22F5CACAD788481 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-phonesign-phonesignUITests/Pods-phonesign-phonesignUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-phonesign-phonesignUITests/Pods-phonesign-phonesignUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-phonesign-phonesignUITests/Pods-phonesign-phonesignUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		634B71589828F09CC753CAB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-phonesign-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95106DA93B68F0CBA0227880 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-phonesign/Pods-phonesign-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-phonesign/Pods-phonesign-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-phonesign/Pods-phonesign-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4985C940A2A68FDA09D0500 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-phonesign-phonesignUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA144AF23C605F160332781B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-phonesignTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB26DE81265B602A00143424 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB26DEE0265B605C00143424 /* macho.cpp in Sources */,
+				DB26DE90265B602A00143424 /* ViewController.mm in Sources */,
+				DB26DEDB265B605B00143424 /* base64.cpp in Sources */,
+				DB26DEE2265B605C00143424 /* signing.cpp in Sources */,
+				DB26DEE1265B605C00143424 /* zsign.cpp in Sources */,
+				DB26DEE3265B605C00143424 /* archo.cpp in Sources */,
+				DB26DE8A265B602A00143424 /* AppDelegate.m in Sources */,
+				DB26DEDC265B605B00143424 /* json.cpp in Sources */,
+				DB26DEDF265B605C00143424 /* bundle.cpp in Sources */,
+				DB26DED8265B605B00143424 /* openssl.cpp in Sources */,
+				DB26DE9B265B602C00143424 /* main.m in Sources */,
+				DB26DEE8265B81AD00143424 /* phonesign.mm in Sources */,
+				DB26DEDA265B605B00143424 /* common.cpp in Sources */,
+				DB26DE8D265B602A00143424 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB26DE9C265B602C00143424 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB26DEA5265B602C00143424 /* phonesignTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB26DEA7265B602C00143424 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB26DEB0265B602C00143424 /* phonesignUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB26DEA2265B602C00143424 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB26DE84265B602A00143424 /* phonesign */;
+			targetProxy = DB26DEA1265B602C00143424 /* PBXContainerItemProxy */;
+		};
+		DB26DEAD265B602C00143424 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB26DE84265B602A00143424 /* phonesign */;
+			targetProxy = DB26DEAC265B602C00143424 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB26DE91265B602A00143424 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB26DE92265B602A00143424 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB26DE96265B602C00143424 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB26DE97265B602C00143424 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB26DEB2265B602C00143424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DB26DEB3265B602C00143424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB26DEB5265B602C00143424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66211741E6A3847A38F0FE7E /* Pods-phonesign.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W5ELC54N2N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = phonesign/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.itzhangbao.phonesign;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB26DEB6265B602C00143424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DD02BE0CDAE03ECC1E5CBA8 /* Pods-phonesign.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W5ELC54N2N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = phonesign/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.itzhangbao.phonesign;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DB26DEB8265B602C00143424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40440E68B715623D4556FEF8 /* Pods-phonesignTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W5ELC54N2N;
+				INFOPLIST_FILE = phonesignTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.itzhangbao.phonesignTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/phonesign.app/phonesign";
+			};
+			name = Debug;
+		};
+		DB26DEB9265B602C00143424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F499EC74784AB3C4D390FD76 /* Pods-phonesignTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W5ELC54N2N;
+				INFOPLIST_FILE = phonesignTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.itzhangbao.phonesignTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/phonesign.app/phonesign";
+			};
+			name = Release;
+		};
+		DB26DEBB265B602C00143424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F50DD8ABE1F2FA8E705C40DD /* Pods-phonesign-phonesignUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W5ELC54N2N;
+				INFOPLIST_FILE = phonesignUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.itzhangbao.phonesignUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = phonesign;
+			};
+			name = Debug;
+		};
+		DB26DEBC265B602C00143424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A60AE269CEC671C867400DD0 /* Pods-phonesign-phonesignUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W5ELC54N2N;
+				INFOPLIST_FILE = phonesignUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.itzhangbao.phonesignUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = phonesign;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB26DE80265B602A00143424 /* Build configuration list for PBXProject "phonesign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB26DEB2265B602C00143424 /* Debug */,
+				DB26DEB3265B602C00143424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB26DEB4265B602C00143424 /* Build configuration list for PBXNativeTarget "phonesign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB26DEB5265B602C00143424 /* Debug */,
+				DB26DEB6265B602C00143424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB26DEB7265B602C00143424 /* Build configuration list for PBXNativeTarget "phonesignTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB26DEB8265B602C00143424 /* Debug */,
+				DB26DEB9265B602C00143424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB26DEBA265B602C00143424 /* Build configuration list for PBXNativeTarget "phonesignUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB26DEBB265B602C00143424 /* Debug */,
+				DB26DEBC265B602C00143424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB26DE7D265B602A00143424 /* Project object */;
+}
